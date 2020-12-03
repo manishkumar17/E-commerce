@@ -96,7 +96,6 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		";
 		exit();
 	}
-	//existing email address in our database
 	$sql = "SELECT user_id FROM user_info WHERE email = '$email' LIMIT 1" ;
 	$check_query = mysqli_query($con,$sql);
 	$count_email = mysqli_num_rows($check_query);
@@ -129,8 +128,6 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	}
 	
 }
-
-
 
 ?>
 

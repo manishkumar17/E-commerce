@@ -6,14 +6,9 @@
         border-radius:30px;
     }
     </style>
-				<!-- row -->
-				
+			
                 <div class="container-fluid">
 					
-						
-						
-						<!-- /Billing Details -->
-						
 								<form id="signup_form" onsubmit="return false" class="login100-form">
 									<div class="billing-details jumbotron">
                                     <div class="section-title">
@@ -58,14 +53,11 @@
                                 
 								</form>
                                 <div class="login-marg">
-						<!-- Billing Details -->
 						<div class="row">
                             <div class="col-md-2"></div>
                             <div class="col-md-8" id="signup_msg">
                                     
-
                                 </div>
-                                <!--Alert from signup form-->
                             </div>
                             <div class="col-md-2"></div>
                         </div>
@@ -73,9 +65,5 @@
 						
 					</div>
                     </div> 
-
-					
-				
-				<!-- /row -->
 
 			

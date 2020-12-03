@@ -238,7 +238,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
 						<b>Product is already added into the cart Continue Shopping..!</b>
 				</div>
-			";//not in video
+			";
 		} else {
 			$sql = "INSERT INTO `cart`
 			(`p_id`, `ip_add`, `user_id`, `qty`) 
@@ -283,13 +283,10 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 		
 	}
 
-//Count User cart item
 if (isset($_POST["count_item"])) {
-	//When user is logged in then we will count number of item in cart by using user session id
 	if (isset($_SESSION["uid"])) {
 		$sql = "SELECT COUNT(*) AS count_item FROM cart WHERE user_id = $_SESSION[uid]";
 	}else{
-		//When user is not logged in then we will count number of item in cart by using users unique ip address
 		$sql = "SELECT COUNT(*) AS count_item FROM cart WHERE ip_add = '$ip_add' AND user_id < 0";
 	}
 	
@@ -298,21 +295,16 @@ if (isset($_POST["count_item"])) {
 	echo $row["count_item"];
 	exit();
 }
-//Count User cart item
 
-//Get Cart Item From Database to Dropdown menu
 if (isset($_POST["Common"])) {
 
 	if (isset($_SESSION["uid"])) {
-		//When user is logged in this query will execute
 		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.user_id='$_SESSION[uid]'";
 	}else{
-		//When user is not logged in this query will execute
 		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0";
 	}
 	$query = mysqli_query($con,$sql);
 	if (isset($_POST["getCartItem"])) {
-		//display cart item in dropdown menu
 		if (mysqli_num_rows($query) > 0) {
 			$n=0;
 			$total_price=0;
@@ -362,7 +354,6 @@ if (isset($_POST["Common"])) {
     
     if (isset($_POST["checkOutDetails"])) {
 		if (mysqli_num_rows($query) > 0) {
-			//display user cart item with "Ready to checkout" button if user is not login
 			echo '<div class="main ">
 			<div class="table-responsive">
 			<form method="post" action="login_form.php">
@@ -448,7 +439,6 @@ if (isset($_POST["Common"])) {
 				
 							</table></div></div>';
                 }else if(isset($_SESSION["uid"])){
-					//Paypal checkout form
 					echo '
 					</form>
 					
@@ -493,7 +483,6 @@ if (isset($_POST["Common"])) {
 	
 }
 
-//Remove Item From cart
 if (isset($_POST["removeItemFromCart"])) {
 	$remove_id = $_POST["rid"];
 	if (isset($_SESSION["uid"])) {
@@ -511,7 +500,6 @@ if (isset($_POST["removeItemFromCart"])) {
 }
 
 
-//Update Item From cart
 if (isset($_POST["updateCartItem"])) {
 	$update_id = $_POST["update_id"];
 	$qty = $_POST["qty"];

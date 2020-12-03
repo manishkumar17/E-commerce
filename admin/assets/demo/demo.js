@@ -1,7 +1,6 @@
 demo = {
   initDocumentationCharts: function() {
     if ($('#dailySalesChart').length != 0 && $('#websiteViewsChart').length != 0) {
-      /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
 
       dataDailySalesChart = {
         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -15,7 +14,7 @@ demo = {
           tension: 0
         }),
         low: 0,
-        high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        high: 50,
         chartPadding: {
           top: 0,
           right: 0,
@@ -35,7 +34,7 @@ demo = {
     var mapOptions = {
       zoom: 13,
       center: myLatlng,
-      scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+      scrollwheel: false,
       styles: [{
           "elementType": "geometry",
           "stylers": [{
@@ -167,8 +166,6 @@ demo = {
       position: myLatlng,
       title: "Hello World!"
     });
-
-    // To add the marker to the map, call setMap();
     marker.setMap(map);
   }
 

@@ -9,78 +9,56 @@ session_start();
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+		 
 		<title>Online Shopping</title>
 
-		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
-		<!-- Bootstrap -->
 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
 
-		<!-- Slick -->
 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
 
-		<!-- nouislider -->
 		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
 
-		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 
-		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 		<link type="text/css" rel="stylesheet" href="css/accountbtn.css"/>
 		
-		
-		
-         
-		
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
     <style>
         #navigation {
-          background: #FF4E50;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+          background: #FF4E50;
+            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  
+            background: linear-gradient(to right, #F9D423, #FF4E50); 
           
         }
         #header {
   
-            background: #780206;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            background: #780206;
+            background: -webkit-linear-gradient(to right, #061161, #780206); 
+            background: linear-gradient(to right, #061161, #780206); 
   
         }
         #top-header {
               
   
-            background: #870000;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            background: #870000; 
+            background: -webkit-linear-gradient(to right, #190A05, #870000); 
+            background: linear-gradient(to right, #190A05, #870000);
 
         }
         #footer {
-            background: #7474BF;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            background: #7474BF; 
+            background: -webkit-linear-gradient(to right, #348AC7, #7474BF); 
+            background: linear-gradient(to right, #348AC7, #7474BF);
 
           color: #1E1F29;
         }
         #bottom-footer {
-            background: #7474BF;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          
+            background: #7474BF; 
+            background: -webkit-linear-gradient(to right, #348AC7, #7474BF); 
+            background: linear-gradient(to right, #348AC7, #7474BF); 
 
         }
         .footer-links li a {
@@ -116,9 +94,7 @@ session_start();
 
     </head>
 	<body>
-		<!-- HEADER -->
 		<header>
-			<!-- TOP HEADER -->
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-right">
@@ -159,17 +135,10 @@ session_start();
 					
 				</div>
 			</div>
-			<!-- /TOP HEADER -->
-			
-			
-
-			<!-- MAIN HEADER -->
+		
 			<div id="header">
-				<!-- container -->
 				<div class="container">
-					<!-- row -->
 					<div class="row">
-						<!-- LOGO -->
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
@@ -180,9 +149,7 @@ session_start();
 								</a>
 							</div>
 						</div>
-						<!-- /LOGO -->
-
-						<!-- SEARCH BAR -->
+					
 						<div class="col-md-6">
 							<div class="header-search">
 								<form>
@@ -196,12 +163,10 @@ session_start();
 								</form>
 							</div>
 						</div>
-						<!-- /SEARCH BAR -->
-
-						<!-- ACCOUNT -->
+					
 						<div class="col-md-3 clearfix">
 							<div class="header-ctn">
-								<!-- Wishlist -->
+						
 								<div>
 									<a href="https://github.com/puneethreddyhc">
 										<i class="fa fa-github"></i>
@@ -209,9 +174,7 @@ session_start();
 										
 									</a>
 								</div>
-								<!-- /Wishlist -->
-
-								<!-- Cart -->
+						
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
@@ -231,44 +194,31 @@ session_start();
 									</div>
 										
 									</div>
-								<!-- /Cart -->
-
-								<!-- Menu Toogle -->
+							
 								<div class="menu-toggle">
 									<a href="#">
 										<i class="fa fa-bars"></i>
 										<span>Menu</span>
 									</a>
 								</div>
-								<!-- /Menu Toogle -->
+							
 							</div>
 						</div>
-						<!-- /ACCOUNT -->
+				
 					</div>
-					<!-- row -->
 				</div>
-				<!-- container -->
 			</div>
-			<!-- /MAIN HEADER -->
 		</header>
-		<!-- /HEADER -->
 		<nav id='navigation'>
-			<!-- container -->
             <div class="container" id="get_category_home">
                 
             </div>
-				<!-- responsive-nav -->
-				
-			<!-- /container -->
+			
 		</nav>
-            
-
-		<!-- NAVIGATION -->
 		
 		<div class="modal fade" id="Modal_login" role="dialog">
                         <div class="modal-dialog">
-													
-                          <!-- Modal content-->
+												
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -289,7 +239,6 @@ session_start();
                 <div class="modal fade" id="Modal_register" role="dialog">
                         <div class="modal-dialog" style="">
 
-                          <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>

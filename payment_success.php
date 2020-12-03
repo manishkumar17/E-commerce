@@ -7,7 +7,6 @@ if(!isset($_SESSION["uid"])){
 
 if (isset($_GET["st"])) {
 
-	# code...
 	$trx_id = $_GET["tx"];
 		$p_st = $_GET["st"];
 		$amt = $_GET["amt"];
@@ -22,7 +21,7 @@ if (isset($_GET["st"])) {
 		$sql = "SELECT p_id,qty FROM cart WHERE user_id = '$cm_user_id'";
 		$query = mysqli_query($con,$sql);
 		if (mysqli_num_rows($query) > 0) {
-			# code...
+			
 			while ($row=mysqli_fetch_array($query)) {
 			$product_id[] = $row["p_id"];
 			$qty[] = $row["qty"];

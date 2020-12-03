@@ -9,11 +9,7 @@ if(isset($_POST["categoryhome"])){
 	$run_query = mysqli_query($con,$category_query) or die(mysqli_error($con));
 	echo "
 		
-            
-            
-				<!-- responsive-nav -->
 				<div id='responsive-nav'>
-					<!-- NAV -->
 					<ul class='main-nav nav navbar-nav'>
                     <li class='active'><a href='index.php'>Home</a></li>
                     <li><a href='store.php'>Electronics</a></li>
@@ -28,11 +24,8 @@ if(isset($_POST["categoryhome"])){
             $row = mysqli_fetch_array($query);
             $count=$row["count_items"];
             
-            
-            
 			echo "
 					
-                    
                                <li class='categoryhome' cid='$cid'><a href='store.php'>$cat_name</a></li>
                     
 			";

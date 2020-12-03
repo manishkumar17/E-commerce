@@ -74,10 +74,6 @@ $(document).ready(function(){
 		})
 	}
    
-    
-	/*	when page is load successfully then there is a list of categories when user click on category we will get category id and 
-		according to id we will show products
-	*/
 	$("body").delegate(".category","click",function(event){
 		$("#get_product").html("<h3>Loading...</h3>");
 		event.preventDefault();
@@ -115,9 +111,6 @@ $(document).ready(function(){
 	
 	})
 
-	/*	when page is load successfully then there is a list of brands when user click on brand we will get brand id and 
-		according to brand id we will show products
-	*/
 	$("body").delegate(".selectBrand","click",function(event){
 		event.preventDefault();
 		$("#get_product").html("<h3>Loading...</h3>");
@@ -136,11 +129,7 @@ $(document).ready(function(){
 		})
 	
 	})
-	/*
-		At the top of page there is a search box with search button when user put name of product then we will take the user 
-		given string and with the help of sql query we will match user given string to our database keywords column then matched product 
-		we will show 
-	*/
+
 	$("#search_btn").click(function(){
 		$("#get_product").html("<h3>Loading...</h3>");
 		var keyword = $("#search").val();
@@ -158,15 +147,7 @@ $(document).ready(function(){
 		})
 		}
 	})
-	//end
 
-
-	/*
-		Here #login is login form id and this form is available in index.php page
-		from here input data is sent to login.php page
-		if you get login_success string from login.php page means user is logged in successfully and window.location is 
-		used to redirect user from home page to profile.php page
-	*/
 	$("#login").on("submit",function(event){
 		event.preventDefault();
 		$(".overlay").show();
@@ -186,9 +167,6 @@ $(document).ready(function(){
 			}
 		})
 	})
-	//end
-
-	//Get User Information before checkout
 	$("#signup_form").on("submit",function(event){
 		event.preventDefault();
 		$(".overlay").show();
@@ -225,10 +203,6 @@ $(document).ready(function(){
 	})
     
     
-    
-	//Get User Information before checkout end here
-
-	//Add Product into Cart
 	$("body").delegate("#product","click",function(event){
 		var pid = $(this).attr("pid");
 		
@@ -246,8 +220,7 @@ $(document).ready(function(){
 			}
 		})
 	})
-	//Add Product into Cart End Here
-	//Count user cart items funtion
+
 	count_item();
 	function count_item(){
 		$.ajax({
@@ -259,9 +232,7 @@ $(document).ready(function(){
 			}
 		})
 	}
-	//Count user cart items funtion end
 
-	//Fetch Cart item from Database to dropdown menu
 	getCartItem();
 	function getCartItem(){
 		$.ajax({
@@ -276,15 +247,7 @@ $(document).ready(function(){
 		})
 	}
 
-	//Fetch Cart item from Database to dropdown menu
 
-	/*
-		Whenever user change qty we will immediate update their total amount by using keyup funtion
-		but whenever user put something(such as ?''"",.()''etc) other than number then we will make qty=1
-		if user put qty 0 or less than 0 then we will again make it 1 qty=1
-		('.total').each() this is loop funtion repeat for class .total and in every repetation we will perform sum operation of class .total value 
-		and then show the result into class .net_total
-	*/
 	$("body").delegate(".qty","keyup",function(event){
 		event.preventDefault();
 		var row = $(this).parent().parent();
@@ -305,12 +268,7 @@ $(document).ready(function(){
 		$('.net_total').html("Total : $ " +net_total);
 
 	})
-	//Change Quantity end here 
 
-	/*
-		whenever user click on .remove class we will take product id of that row 
-		and send it to action.php to perform product removal operation
-	*/
     
 	   
     $("body").delegate(".remove","click",function(event){
@@ -327,11 +285,7 @@ $(document).ready(function(){
             })
     })
     
-    
-	/*
-		whenever user click on .update class we will take product id of that row 
-		and send it to action.php to perform product qty updation operation
-	*/
+
 	$("body").delegate(".update","click",function(event){
 		var update = $(this).parent().parent().parent();
 		var update_id = update.find(".update").attr("update_id");
@@ -350,13 +304,7 @@ $(document).ready(function(){
 	})
 	checkOutDetails();
 	net_total();
-	/*
-		checkOutDetails() function work for two purposes
-		First it will enable php isset($_POST["Common"]) in action.php page and inside that
-		there is two isset funtion which is isset($_POST["getCartItem"]) and another one is isset($_POST["checkOutDetials"])
-		getCartItem is used to show the cart item into dropdown menu 
-		checkOutDetails is used to show cart item into Cart.php page
-	*/
+
 	function checkOutDetails(){
 	 $('.overlay').show();
 		$.ajax({
@@ -370,9 +318,7 @@ $(document).ready(function(){
 			}
 		})
 	}
-	/*
-		net_total function is used to calcuate total amount of cart item
-	*/
+
 	function net_total(){
 		var net_total = 0;
 		$('.qty').each(function(){
@@ -386,8 +332,6 @@ $(document).ready(function(){
 		})
 		$('.net_total').html("Total : $ " +net_total);
 	}
-
-	//remove product from cart
 
 	page();
 	function page(){

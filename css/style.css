@@ -1,60 +1,3 @@
-/*
-Template Name: Electro - HTML Ecommerce Template
-Author: yaminncco
-
-Colors:
-	Body 		: #333
-	Headers 	: #2B2D42
-	Primary 	: #D10024
-	Dark 		: #15161D ##1E1F29
-	Grey 		: #E4E7ED #FBFBFC #8D99AE #B9BABC
-
-Fonts: Montserrat
-
-Table OF Contents
-------------------------------------
-1 > GENERAL
------- Typography
------- Buttons
------- Inputs
------- Sections
------- Breadcrumb
-2 > HEADER
------- Top header
------- Logo
------- Search
------- Cart
-3 > NAVIGATION
------- Main nav
------- Responsive Nav
-4 > CATEGORY SHOP
-5 > HOT DEAL
-6 > PRODUCT
------- Product
------- Widget product
------- Product slick
-7 > STORE PAGE
------- Aside
------- Store
-8 > PRODUCT DETAILS PAGE
------- Product view
------- Product details
------- Product tab
-9 > CHECKOUT PAGE
-10 > NEWSLETTER
-11 > FOOTER
-11 > SLICK STYLE
-12 > RESPONSIVE
-------------------------------------*/
-
-/*=========================================================
-	01 -> GENERAL
-===========================================================*/
-
-/*----------------------------*\
-	Typography
-\*----------------------------*/
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -87,10 +30,6 @@ ul, ol {
   list-style: none
 }
 
-/*----------------------------*\
-	Buttons
-\*----------------------------*/
-
 .primary-btn {
   display: inline-block;
   padding: 12px 30px;
@@ -109,10 +48,6 @@ ul, ol {
   opacity: 0.9;
   color: #FFF;
 }
-
-/*----------------------------*\
-	Inputs
-\*----------------------------*/
 .wrap-login100 {
     width: 500px;
     background: #fff;
@@ -157,8 +92,6 @@ ul, ol {
     margin-bottom: 23px;
 }
 
-/*-- Text input --*/
-
 
 .input {
   height: 40px;
@@ -172,9 +105,6 @@ textarea.input {
   padding: 15px;
   min-height: 90px;
 }
-
-/*-- Number input --*/
-
 .input-number {
   position: relative;
 }
@@ -225,8 +155,6 @@ textarea.input {
   color: #D10024;
 }
 
-/*-- Select input --*/
-
 .input-select {
   padding: 0px 15px;
   background: #FFF;
@@ -234,7 +162,6 @@ textarea.input {
   height: 40px;
 }
 
-/*-- checkbox & radio input --*/
 
 .input-radio, .input-checkbox {
   position: relative;
@@ -332,9 +259,6 @@ textarea.input {
   max-height: 800px;
 }
 
-/*----------------------------*\
-	Section
-\*----------------------------*/
 
 .section {
   padding-top: 30px;
@@ -398,10 +322,6 @@ textarea.input {
   right: 0px;
 }
 
-/*----------------------------*\
-	Breadcrumb
-\*----------------------------*/
-
 #breadcrumb {
   padding: 30px 0px;
   background: #FBFBFC;
@@ -447,14 +367,6 @@ textarea.input {
   color: #D10024;
 }
 
-/*=========================================================
-	02 -> HEADER
-===========================================================*/
-
-/*----------------------------*\
-	Top header
-\*----------------------------*/
-
 #top-header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -484,10 +396,6 @@ textarea.input {
   margin-right: 5px;
 }
 
-/*----------------------------*\
-	Logo
-\*----------------------------*/
-
 #header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -501,10 +409,6 @@ textarea.input {
 .header-logo .logo img {
   display: block;
 }
-
-/*----------------------------*\
-	Search
-\*----------------------------*/
 
 .header-search {
   padding: 15px 0px;
@@ -538,10 +442,6 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   border: none;
   border-radius: 0px 40px 40px 0px;
 }
-
-/*----------------------------*\
-	Cart
-\*----------------------------*/
 
 .header-ctn {
   float: right;
@@ -665,19 +565,11 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   padding-bottom: 15px;
 }
 
-/*=========================================================
-	03 -> Navigation
-===========================================================*/
-
 #navigation {
   background: #FFF;
   border-bottom: 2px solid #E4E7ED;
   border-top: 3px solid #D10024;
 }
-
-/*----------------------------*\
-	Main nav
-\*----------------------------*/
 
 .main-nav>li+li {
   margin-left: 30px
@@ -688,7 +580,7 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
 }
 
 .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
-  color: #00B4DB;  /* fallback for old browsers */
+  color: #00B4DB; 
 
 
   background-color: transparent;
@@ -713,10 +605,6 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
 .header-ctn li.nav-toggle {
   display: none;
 }
-
-/*----------------------------*\
-	responsive nav
-\*----------------------------*/
 
 @media only screen and (max-width: 991px) {
   .header-ctn .menu-toggle {
@@ -762,10 +650,6 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   }
 }
 
-/*=========================================================
-	04 -> CATEGORY SHOP
-===========================================================*/
-
 .shop {
   position: relative;
   overflow: hidden;
@@ -779,17 +663,9 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   bottom: 0;
   left: 0px;
   width: 60%;
-  background: #12c2e9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-
-
-
-
-
+  background: #12c2e9; 
+background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  
+background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);
   opacity: 0.9;
   -webkit-transform: skewX(-45deg);
   -ms-transform: skewX(-45deg);
@@ -803,13 +679,9 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   bottom: 0;
   left: 1px;
   width: 100%;
- background: #12c2e9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-
+ background: #12c2e9; 
+background: -webkit-linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); 
+background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9);
   opacity: 0.9;
   -webkit-transform: skewX(-45deg) translateX(-100%);
   -ms-transform: skewX(-45deg) translateX(-100%);
@@ -850,10 +722,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   color: #FFF;
   text-transform: uppercase;
 }
-
-/*=========================================================
-	05 -> HOT DEAL
-===========================================================*/
 
 #hot-deal.section {
   padding: 60px 0px;
@@ -913,14 +781,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 .hot-deal .cta-btn {
   margin-top: 15px;
 }
-
-/*=========================================================
-	06 -> PRODUCT
-===========================================================*/
-
-/*----------------------------*\
-	product
-\*----------------------------*/
 
 .product {
   position: relative;
@@ -1144,10 +1004,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   visibility: visible;
 }
 
-/*----------------------------*\
-	Widget product
-\*----------------------------*/
-
 .product-widget {
   position: relative;
 }
@@ -1223,10 +1079,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   color: #FFF;
 }
 
-/*----------------------------*\
-	Products slick
-\*----------------------------*/
-
 .products-slick .slick-list {
   padding-bottom: 60px;
   margin-bottom: -60px;
@@ -1274,14 +1126,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   font-size: 14px;
 }
 
-/*=========================================================
-	07 -> PRODUCTS PAGE
-===========================================================*/
-
-/*----------------------------*\
-	Aside
-\*----------------------------*/
-
 .aside+.aside {
   margin-top: 30px;
 }
@@ -1291,8 +1135,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   font-size: 18px;
   margin: 15px 0px 30px;
 }
-
-/*-- checkbox Filter --*/
 
 .checkbox-filter>div+div {
   margin-top: 10px;
@@ -1305,8 +1147,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 .checkbox-filter .input-radio label small, .checkbox-filter .input-checkbox label small {
   color: #8D99AE;
 }
-
-/*-- Price Filter --*/
 
 #price-slider {
   margin-bottom: 15px;
@@ -1349,16 +1189,10 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   width: calc(50% - 7px);
 }
 
-/*----------------------------*\
-	Store
-\*----------------------------*/
-
 .store-filter {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-
-/*-- Store Sort --*/
 
 .store-sort {
   display: inline-block;
@@ -1370,8 +1204,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   text-transform: uppercase;
   margin-right: 15px;
 }
-
-/*-- Store Grid --*/
 
 .store-grid {
   float: right;
@@ -1408,8 +1240,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 .store-grid li a {
   display: block;
 }
-
-/*-- Store Pagination --*/
 
 .store-pagination {
   float: right;
@@ -1455,13 +1285,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   font-size: 12px;
 }
 
-/*=========================================================
-	08 -> PRODUCT DETAILS PAGE
-===========================================================*/
-
-/*----------------------------*\
-	Product view
-\*----------------------------*/
 
 #product-main-img .slick-prev {
   -webkit-transform: translateX(-15px);
@@ -1532,10 +1355,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
 .product-preview img {
   width: 100%;
 }
-
-/*----------------------------*\
-	Product details
-\*----------------------------*/
 
 .product-details .product-name {
   text-transform: uppercase;
@@ -1678,10 +1497,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   margin-left: 10px;
 }
 
-/*----------------------------*\
-	 Product tab
-\*----------------------------*/
-
 #product-tab {
   margin-top: 60px;
 }
@@ -1738,8 +1553,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   width: 100%;
 }
 
-/*-- Rating --*/
-
 .rating-avg {
   font-size: 24px;
   font-weight: 700;
@@ -1790,8 +1603,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   font-size: 12px;
   color: #8D99AE;
 }
-
-/*-- Reviews --*/
 
 .reviews li {
   position: relative;
@@ -1866,8 +1677,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   display: block;
 }
 
-/*-- Review Form --*/
-
 .review-form .input {
   margin-bottom: 15px;
 }
@@ -1908,10 +1717,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   content: "\f005";
   color: #D10024;
 }
-
-/*=========================================================
-	09 -> CHECKOUT PAGE
-===========================================================*/
 
 .billing-details {
   margin-bottom: 30px;
@@ -1983,10 +1788,6 @@ background: linear-gradient(to bottom, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10
   display: block;
   margin-top: 30px;
 }
-
-/*=========================================================
-	10 -> NEWSLETTER
-===========================================================*/
 
 #newsletter.section {
   border-top: 2px solid #E4E7ED;
@@ -2071,10 +1872,6 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   color: #D10024;
 }
 
-/*=========================================================
-	11 -> FOOTER
-===========================================================*/
-
 #footer {
   background: #15161D;
   color: #B9BABC;
@@ -2131,14 +1928,6 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   display: block;
 }
 
-/*=========================================================
-	12 -> SLICK STYLE
-===========================================================*/
-
-/*----------------------------*\
-	Arrows
-\*----------------------------*/
-
 .slick-prev, .slick-next {
   width: 40px;
   height: 40px;
@@ -2180,10 +1969,6 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   right: -20px;
 }
 
-/*----------------------------*\
-	Dots
-\*----------------------------*/
-
 .slick-dots li, .slick-dots li button, .slick-dots li button:before {
   width: 10px;
   height: 10px;
@@ -2204,10 +1989,6 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
   position: static;
   margin: 15px 0px;
 }
-
-/*=========================================================
-	13 -> RESPONSIVE
-===========================================================*/
 
 @media only screen and (max-width: 1201px) {}
 
@@ -2329,10 +2110,7 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
 .login-col{
     background-image: linear-gradient(-135deg, #FF6CAB 0%, #F660BC 10%, #EC53CD 20%, #E045DE 30%, #D335EE 40%, #C323FF 50%, #B53AFF 60%, #A749FF 70%, #9854FF 80%, #865EFF 90%, #7366FF 100%);
     padding-bottom: 5%;
-    
-    
-        
-    
+  
 }
 
 .login-pad{
@@ -2379,9 +2157,9 @@ background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, 
 }
 .mainn {
 
-    background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #C9D6FF; 
+background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF); 
+background: linear-gradient(to bottom, #E2E2E2, #C9D6FF);
 
 
 

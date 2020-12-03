@@ -1,7 +1,6 @@
 <?php
 include "header.php";
 ?>
-		<!-- /BREADCRUMB -->
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -20,13 +19,10 @@ include "header.php";
     var _hash = "!";
     var noBackPlease = function () {
         global.location.href += "#";
-		// making sure we have the fruit available for juice....
-		// 50 milliseconds for just once do not cost much (^__^)
         global.setTimeout(function () {
             global.location.href += "!";
         }, 50);
     };	
-	// Earlier we had setInerval here....
     global.onhashchange = function () {
         if (global.location.hash !== _hash) {
             global.location.hash = _hash;
@@ -34,26 +30,22 @@ include "header.php";
     };
     global.onload = function () {        
 		noBackPlease();
-		// disables backspace on page except on input fields and textarea..
+		
 		document.body.onkeydown = function (e) {
             var elm = e.target.nodeName.toLowerCase();
             if (e.which === 8 && (elm !== 'input' && elm  !== 'textarea')) {
                 e.preventDefault();
             }
-            // stopping event bubbling up the DOM tree..
+            
             e.stopPropagation();
         };		
     };
 })(window);
 </script>
 
-		<!-- SECTION -->
 		<div class="section main main-raised">
-			<!-- container -->
 			<div class="container">
-				<!-- row -->
 				<div class="row">
-					<!-- Product main img -->
 					
 					<?php 
 								include 'db.php';
@@ -117,7 +109,6 @@ include "header.php";
 									';
                                     
 									?>
-									<!-- FlexSlider -->
 									
 									<?php 
 									echo '
@@ -195,34 +186,15 @@ include "header.php";
 
 						</div>
 					</div>
-									
-					
-					<!-- /Product main img -->
 
-					<!-- Product thumb imgs -->
-					
-					
-					
-					<!-- /Product thumb imgs -->
-
-					<!-- Product details -->
-					
-					<!-- /Product details -->
-
-					<!-- Product tab -->
 					<div class="col-md-12">
 						<div id="product-tab">
-							<!-- product tab nav -->
 							<ul class="tab-nav">
 								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
 								<li><a data-toggle="tab" href="#tab2">Details</a></li>
 								<li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
 							</ul>
-							<!-- /product tab nav -->
-
-							<!-- product tab content -->
 							<div class="tab-content">
-								<!-- tab1  -->
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
@@ -230,9 +202,7 @@ include "header.php";
 										</div>
 									</div>
 								</div>
-								<!-- /tab1  -->
-
-								<!-- tab2  -->
+								
 								<div id="tab2" class="tab-pane fade in">
 									<div class="row">
 										<div class="col-md-12">
@@ -240,12 +210,9 @@ include "header.php";
 										</div>
 									</div>
 								</div>
-								<!-- /tab2  -->
-
-								<!-- tab3  -->
+							
 								<div id="tab3" class="tab-pane fade in">
 									<div class="row">
-										<!-- Rating -->
 										<div class="col-md-3">
 											<div id="rating">
 												<div class="rating-avg">
@@ -327,9 +294,7 @@ include "header.php";
 												</ul>
 											</div>
 										</div>
-										<!-- /Rating -->
-
-										<!-- Reviews -->
+										
 										<div class="col-md-6">
 											<div id="reviews">
 												<ul class="reviews">
@@ -391,9 +356,7 @@ include "header.php";
 												</ul>
 											</div>
 										</div>
-										<!-- /Reviews -->
-
-										<!-- Review Form -->
+										
 										<div class="col-md-3 mainn">
 											<div id="review-form">
 												<form class="review-form">
@@ -414,27 +377,18 @@ include "header.php";
 												</form>
 											</div>
 										</div>
-										<!-- /Review Form -->
+									
 									</div>
 								</div>
-								<!-- /tab3  -->
 							</div>
-							<!-- /product tab content  -->
 						</div>
 					</div>
-					<!-- /product tab -->
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
 		</div>
-		<!-- /SECTION -->
-
-		<!-- Section -->
+		
 		<div class="section main main-raised">
-			<!-- container -->
 			<div class="container">
-				<!-- row -->
 				<div class="row">
                     
 					<div class="col-md-12">
@@ -508,23 +462,10 @@ include "header.php";
       
 }
 ?>
-					<!-- product -->
-					
-					<!-- /product -->
 
 				</div>
-				<!-- /row -->
-                
 			</div>
-			<!-- /container -->
 		</div>
-		<!-- /Section -->
-
-		<!-- NEWSLETTER -->
-		
-		<!-- /NEWSLETTER -->
-
-		<!-- FOOTER -->
 <?php
 include "newslettter.php";
 include "footer.php";
