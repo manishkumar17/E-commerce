@@ -16,28 +16,20 @@
             </script>, made with <i class="material-icons">favorite</i> by
             <a href="" target="_blank">Puneethreddy</a> for a better web.
           </div>
-          <!-- your footer here -->
         </div>
       </footer>
     </div>
   </div>
-  <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js"></script>
   <script src="./assets/js/core/popper.min.js"></script>
   <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
   <script src=""></script>
   <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src=""></script>
-  <!--  Google Maps Plugin    -->
   <script src=""></script>
-  <!-- Chartist JS -->
   <script src="./assets/js/plugins/chartist.min.js"></script>
-  <!--  Notifications Plugin    -->
   <script src="./assets/js/plugins/bootstrap-notify.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/material-dashboard.js?v=2.1.0"></script>
-  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="./assets/demo/demo.js"></script>
   <script>
     $(document).ready(function() {
@@ -53,7 +45,6 @@
         window_width = $(window).width();
 
         $('.fixed-plugin a').click(function(event) {
-          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
           if ($(this).hasClass('switch-trigger')) {
             if (event.stopPropagation) {
               event.stopPropagation();
@@ -187,12 +178,10 @@
             }, 300);
           }
 
-          // we simulate the window Resize so the charts will get updated in realtime.
           var simulateWindowResize = setInterval(function() {
             window.dispatchEvent(new Event('resize'));
           }, 180);
 
-          // we stop the simulation of Window Resize after the animations are completed
           setTimeout(function() {
             clearInterval(simulateWindowResize);
           }, 1000);

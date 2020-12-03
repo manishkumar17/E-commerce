@@ -32,9 +32,7 @@ if(isset($_POST["categoryhome"])){
 		}
         
 		echo "</ul>
-					<!-- /NAV -->
 				</div>
-				<!-- /responsive-nav -->
                
 			";
 	}

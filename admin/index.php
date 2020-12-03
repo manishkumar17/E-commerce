@@ -6,12 +6,11 @@ include("../db.php");
 include "sidenav.php";
 include "topheader.php";
 ?>
-      <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
          <div class="panel-body">
 		<a>
-            <?php  //success message
+            <?php 
             if(isset($_POST['success'])) {
             $success = $_POST["success"];
             echo "<h1 style='color:#0C0'>Your Product was added successfully &nbsp;&nbsp;  <span class='glyphicon glyphicon-ok'></h1></span>";

@@ -6,14 +6,12 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 {
 $user_id=$_GET['user_id'];
 
-/*this is delet quer*/
 mysqli_query($con,"delete from user_info where user_id='$user_id'")or die("query is incorrect...");
 }
 
 include "sidenav.php";
 include "topheader.php";
 ?>
-      <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
          <div class="col-md-14">

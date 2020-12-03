@@ -88,8 +88,7 @@ if(isset($_POST["page"])){
 	for($i=1;$i<=$pageno;$i++){
 		echo "
 			<li><a href='#product-row' page='$i' id='page' class='active'>$i</a></li>
-            
-            
+        
 		";
 	}
 }
@@ -115,7 +114,6 @@ if(isset($_POST["getProduct"])){
             $cat_name = $row["cat_title"];
 			echo "
 				
-                        
                         <div class='col-md-4 col-xs-6' >
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>

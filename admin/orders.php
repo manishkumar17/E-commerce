@@ -8,11 +8,9 @@ if(isset($_GET['action']) && $_GET['action']!="" && $_GET['action']=='delete')
 {
 $order_id=$_GET['order_id'];
 
-/*this is delet query*/
 mysqli_query($con,"delete from orders where order_id='$order_id'")or die("delete query is incorrect...");
 } 
 
-///pagination
 $page=$_GET['page'];
 
 if($page=="" || $page=="1")
@@ -27,10 +25,8 @@ $page1=($page*10)-10;
 include "sidenav.php";
 include "topheader.php";
 ?>
-      <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <!-- your content here -->
           <div class="col-md-14">
             <div class="card ">
               <div class="card-header card-header-primary">

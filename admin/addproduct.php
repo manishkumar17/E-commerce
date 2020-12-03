@@ -13,7 +13,6 @@ $product_type=$_POST['product_type'];
 $brand=$_POST['brand'];
 $tags=$_POST['tags'];
 
-//picture coding
 $picture_name=$_FILES['picture']['name'];
 $picture_type=$_FILES['picture']['type'];
 $picture_tmp_name=$_FILES['picture']['tmp_name'];
@@ -36,7 +35,6 @@ mysqli_close($con);
 include "sidenav.php";
 include "topheader.php";
 ?>
-      <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
           <form action="" method="post" type="form" name="form" enctype="multipart/form-data">

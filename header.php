@@ -168,7 +168,7 @@ session_start();
 							<div class="header-ctn">
 						
 								<div>
-									<a href="https://github.com/puneethreddyhc">
+									<a href="https://github.com/manishkumar17">
 										<i class="fa fa-github"></i>
 										<span>Github</span>
 										

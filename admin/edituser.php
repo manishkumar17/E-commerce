@@ -24,7 +24,6 @@ mysqli_close($con);
 include "sidenav.php";
 include "topheader.php";
 ?>
-      <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
         <div class="col-md-5 mx-auto">
